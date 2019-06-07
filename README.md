@@ -28,23 +28,38 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 
 ## Self-Study/Essay Questions
 
-- [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
-- [ ] Describe a life-cycle event in React?
-- [ ] Explain the details of a Higher Order Component?
-- [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+- [x] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+
+PropTypes are used as a preventative way of debugging. When an application expects a certain type of data, a incorrect data type can cause problems when passing props around
+
+- [x] Describe a life-cycle event in React?
+
+The React life-cycle is a series of phases where a component is created, applied then destroyed. In the creation phase 'componentDidMount' is used to initialize state. It is invoked after render is called. If the parent passes down new props this is done in the mounting phase. 'this.setState' is used to change any state that need to be changed. After the 'componentDidUpdate', or all the new props have been passed, the lifecycle is complete
+
+- [x] Explain the details of a Higher Order Component?
+
+Higher order components are used as a way of almost combining up components that share similar behaviors. In an HOC the functionality of a component is passed to another component and functionality is added to it
+
+- [x] What are three different ways to style components in React? Explain some of the benefits of each.
+
+  1)The traditional way: Using CSS has the benefit of being easier depending on the project
+
+  2)Styled components: This has the benefit of keeping everything in javascript. You can import styled components
+
+  3)Import a Library: Libraries have the benefit of already having most of the work completed, but are restrictive
 
 ## Project Setup
 
 Follow these steps to set up your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
-- [ ] From within the `lambdatimes` folder run `yarn` and then `yarn start`. This will open your locally hosted application in your browser. Once you are ready move onto the next steps.
-- [ ] Inside the `Content` folder you will find all 5 components that make up the content of the application. The flow goes like this: `Content > Tabs > Tab` and `Content > Cards > Card`. Follow the directions in the `Content` component to get your data ready.
+- [x] Create a forked copy of this project.
+- [x] Add your project manager as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
+- [x] From within the `lambdatimes` folder run `yarn` and then `yarn start`. This will open your locally hosted application in your browser. Once you are ready move onto the next steps.
+- [x] Inside the `Content` folder you will find all 5 components that make up the content of the application. The flow goes like this: `Content > Tabs > Tab` and `Content > Cards > Card`. Follow the directions in the `Content` component to get your data ready.
 
 Follow these steps for completing your project.
 
