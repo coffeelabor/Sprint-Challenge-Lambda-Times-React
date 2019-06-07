@@ -1,5 +1,7 @@
-import React from 'react';
-import Tab from './Tab';
+// Content > Tabs > Tab
+
+import React from "react";
+import Tab from "./Tab";
 const Tabs = props => {
   return (
     <div className="tabs">
