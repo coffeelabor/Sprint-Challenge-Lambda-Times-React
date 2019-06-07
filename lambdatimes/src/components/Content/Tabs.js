@@ -1,5 +1,3 @@
-Content > Tabs > Tab;
-
 import React from "react";
 import Tab from "./Tab";
 import PropTypes from "prop-types";
@@ -22,8 +20,8 @@ const Tabs = props => {
 // Make sure to use PropTypes to validate your types!
 
 Tabs.propTypes = {
-  cardData: PropTypes.shape({
-    tab: PropTypes.string
+  tabData: PropTypes.shape({
+    props: PropTypes.string
   })
 };
 
