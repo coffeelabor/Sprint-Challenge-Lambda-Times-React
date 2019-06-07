@@ -42,7 +42,7 @@ Higher order components are used as a way of almost combining up components that
 
 - [x] What are three different ways to style components in React? Explain some of the benefits of each.
 
-  1)The traditional way: Using SASS has the benefit of being easier depending on the project
+  1)The traditional way: Using CSS has the benefit of being easier depending on the project
 
   2)Styled components: This has the benefit of keeping everything in javascript. You can import styled components
 

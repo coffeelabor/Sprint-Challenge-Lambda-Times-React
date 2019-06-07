@@ -6,21 +6,14 @@ const Tab = props => {
       if they match, the className should be: 'tab active-tab', 
       if it is not it should just be 'tab'*/
   //I want to add className="tab active-tab" to the changeSelected function returns from Content.js
-
-  selectTabHandler = e => {
-    // const tabFiltered = props.tabs.filter(filterTab = {
-    //   if (filterTab.selected.include({props.selected}))
-    // })
-  };
-
+  console.log(props.tab);
   return (
     <div
-      className={""}
-      onClick={() => {
-        /* Replace this dummy click handler function with your selectTabHandler function from props 
-         you'll need to pass the `tab` in as an argument to this handler. */
-        //  I want to map over the tabs and only have the active-tab class display
-      }}
+      className={props.tab === props.selectedTab ? "tab active-tab" : "tab"}
+      onClick={() => props.selectTabHandler(props.tab)}
+      /* Replace this dummy click handler function with your selectTabHandler function from props 
+       you'll need to pass the `tab` in as an argument to this handler. */
+      //  I want to map over the tabs and only have the active-tab class display
     >
       {props.tab.toUpperCase()}
     </div>
@@ -29,7 +22,7 @@ const Tab = props => {
 
 // Make sure you include PropTypes on your props.
 
-Tabs.propTypes = {
+Tab.propTypes = {
   tabData: PropTypes.shape({
     props: PropTypes.string
   })
